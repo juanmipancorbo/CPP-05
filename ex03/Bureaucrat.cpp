@@ -6,7 +6,7 @@
 /*   By: jpancorb <jpancorb@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/21 17:48:42 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/05/27 19:11:59 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/05/29 18:18:15 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,27 +68,6 @@ void Bureaucrat::decrementGrade(void)
 	_grade++;
 }
 
-// Exception messages
-const char *Bureaucrat::GradeTooHighException::what(void) const throw()
-{
-	return "Grade is too high!";
-}
-
-const char *Bureaucrat::GradeTooLowException::what(void) const throw()
-{
-	return "Grade is too low!";
-}
-
-// Stream insertion overload
-std::ostream &operator<<(std::ostream &out, const Bureaucrat &b)
-{
-	out << b.getName()
-		<< ", bureaucrat grade "
-		<< b.getGrade()
-		<< ".";
-	return out;
-}
-
 void Bureaucrat::signForm(AForm &f) const
 {
 	try
@@ -129,4 +108,25 @@ void Bureaucrat::executeForm(const AForm &f) const
 		          << e.what()
 		          << std::endl;
 	}
+}
+
+// Exception messages
+const char *Bureaucrat::GradeTooHighException::what(void) const throw()
+{
+	return "Grade is too high!";
+}
+
+const char *Bureaucrat::GradeTooLowException::what(void) const throw()
+{
+	return "Grade is too low!";
+}
+
+// Stream insertion overload
+std::ostream &operator<<(std::ostream &out, const Bureaucrat &b)
+{
+	out << b.getName()
+		<< ", bureaucrat grade "
+		<< b.getGrade()
+		<< ".";
+	return out;
 }

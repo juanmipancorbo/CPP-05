@@ -6,7 +6,7 @@
 /*   By: jpancorb <jpancorb@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 17:32:54 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/05/28 17:46:36 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/05/29 19:36:56 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,8 @@ AForm *Intern::makeForm(const std::string &formName,
 		"presidential pardon"
 	};
 	// member function pointers
-	AForm *(Intern::*makers[3])(const std::string &) const = {
+	AForm *(Intern::*makers[3])(const std::string &) const =
+	{
 		&Intern::_makeShrubberyCreation,
 		&Intern::_makeRobotomyRequest,
 		&Intern::_makePresidentialPardon
@@ -79,8 +80,8 @@ AForm *Intern::makeForm(const std::string &formName,
 		}
 	}
 
-	std::cerr << "Intern cannot create form named \""
+	std::cout << "Intern cannot create \""
 	          << formName
-	          << "\"" << std::endl;
+	          << "\" because this form name does not exist" << std::endl;
 	return NULL;
 }

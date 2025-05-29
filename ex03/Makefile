@@ -6,11 +6,11 @@
 #    By: jpancorb <jpancorb@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/26 17:01:06 by jpancorb          #+#    #+#              #
-#    Updated: 2025/05/28 17:42:18 by jpancorb         ###   ########.fr        #
+#    Updated: 2025/05/29 19:48:32 by jpancorb         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= no_you_need_form_28b_not_28c
+NAME	= at_least_this_beats_coffee_making
 FLAGS	= -Wall -Wextra -Werror -std=c++98 -MMD -MP
 SRCS	= main.cpp Bureaucrat.cpp AForm.cpp ShrubberyCreationForm.cpp \
 		RobotomyRequestForm.cpp PresidentialPardonForm.cpp Intern.cpp

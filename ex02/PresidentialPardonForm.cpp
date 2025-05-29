@@ -6,7 +6,7 @@
 /*   By: jpancorb <jpancorb@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 19:07:33 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/05/28 17:24:50 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/05/29 17:27:24 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,6 @@ PresidentialPardonForm::~PresidentialPardonForm(void) {}
 void PresidentialPardonForm::executeAction(void) const
 {
 	std::cout << _target
-	          << " has been pardoned by Barack Obama."
+	          << " has been pardoned by Zaphod Beeblebrox."
 	          << std::endl;
 }

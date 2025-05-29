@@ -6,7 +6,7 @@
 /*   By: jpancorb <jpancorb@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 19:05:36 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/05/27 19:06:10 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/05/29 17:19:57 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ RobotomyRequestForm::~RobotomyRequestForm(void) {}
 // action: drilling noises + 50% chance
 void RobotomyRequestForm::executeAction(void) const
 {
-	std::cout << "Brrrr... bzzzt... drilling noises..." << std::endl;
+	std::cout << "Prrrr... trktrktrkppp... drilling noises..." << std::endl;
 	if (std::rand() % 2)
 		std::cout << _target << " has been robotomized successfully." << std::endl;
 	else

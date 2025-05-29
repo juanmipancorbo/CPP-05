@@ -6,7 +6,7 @@
 /*   By: jpancorb <jpancorb@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 17:31:56 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/05/28 17:37:15 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/05/29 19:27:49 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,12 @@ class PresidentialPardonForm;
 
 class Intern
 {
+	private:
+		// factory methods for each form type
+		AForm *_makeShrubberyCreation(const std::string &target) const;
+		AForm *_makeRobotomyRequest(const std::string &target) const;
+		AForm *_makePresidentialPardon(const std::string &target) const;
+		
 	public:
 		Intern(void);
 		Intern(const Intern &other);
@@ -34,11 +40,6 @@ class Intern
 		AForm *makeForm(const std::string &formName,
 						const std::string &target) const;
 
-	private:
-		// factory methods for each form type
-		AForm *_makeShrubberyCreation(const std::string &target) const;
-		AForm *_makeRobotomyRequest(const std::string &target) const;
-		AForm *_makePresidentialPardon(const std::string &target) const;
 };
 
 #endif // INTERN_HPP

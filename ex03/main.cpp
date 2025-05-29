@@ -6,7 +6,7 @@
 /*   By: jpancorb <jpancorb@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 19:12:14 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/05/28 17:47:50 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/05/29 19:36:02 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int main(void)
 	form1 = someRandomIntern.makeForm("shrubbery creation", "Bart");
 	form2 = someRandomIntern.makeForm("robotomy request", "Roby");
 	form3 = someRandomIntern.makeForm("presidential pardon", "Felipe");
-	form4 = someRandomIntern.makeForm("unknown form", "Nobody");
+	form4 = someRandomIntern.makeForm("peterete form", "Tato");
 
 	std::cout << std::endl;
 
